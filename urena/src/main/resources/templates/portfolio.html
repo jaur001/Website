@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+    <div>
+        <div class="main_container">
+            <div class="nav container">
+                <nav>
+                    <ul class="nav_list" style="list-style-type: none;">
+                        <li><a class="nav_item" href="#about">About</a></li>
+                        <li><a class="nav_item" href="#skills">Skills</a></li>
+                        <li><a class="nav_item" href="#work-experience">Work experience</a></li>
+                        <li><a class="nav_item" href="#education">Education</a></li>
+                        <li><a class="nav_item" href="#projects">Projects</a></li>
+                        <li><a class="nav_item" href="#achievements">Achievements</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <hr style="max-width: 1200px;border: 1px solid rgb(75,84,59)">
+            <div class="flex_container">
+                <div  class="container main_content flex_content " style="flex: 1">
+                    <h1>Juan Ureña</h1>
+                    <h3>FULL STACK SOFTWARE ENGINNER</h3>
+                    <h3>+34 626486347 </h3>
+                    <h3>JUALUR01@GMAIL.COM</h3>
+                    <a href="https://www.linkedin.com/in/juanalbertoure%C3%B1arodr%C3%ADguez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jaur001" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div id="about" class="container about_container flex_content" style="flex: 2;">
+                    <p>
+                        I am a software engineer specialized in Java. I have been programming in this language for 4 years during the
+                        degree. I want to develop my professional career as a Java developer because in this language I feel the most
+                        comfortable to work with, besides that is the one that I can program more complex applications. I have worked
+                        during 8 months in The Singular Factory as a Software Engineer, developing different software products. I am
+                        motivated to develop and improve my skills in this sector and grow professionally.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="main_section">
+            <div id="skills" class="container skills_container">
+            <h2 style="background: rgb(75,84,59)">Skills</h2>
+            <h3>Languages</h3>
+            <p>
+                • Java 4 years hands-on experience: during the degree where I mainly used this language to develop
+                different projects: Webapps, Data mining, Swing or JavaFX application, REST and SOAP web services…
+                etc.
+                <br>• Frontend: HTML5, CSS, JavaScript.
+                <br>• Other languages: Python, C, C++, C#, SQL.
+            </p>
+            <h3>Frameworks</h3>
+            <p>
+                • Java Frameworks: Spring (MVC, AOP, Security, REST, Boot), Hibernate.
+                <br>• JavaScript Frameworks: Express.js, Node.js, Vue.js, AngularJS.
+            </p>
+            <h3>Tools and Other Skills</h3>
+            <p>
+                • Java IDEs: IntelliJ, Eclipse, NetBeans.
+                <br>• Other IDEs: WebStorm, Visual Studio.
+                <br>• Java libraries and technologies: JSP, Java websockets, Java Servlets, Jsoup.
+                <br>• JavaScript libraries: Ajax, Bootstrap.
+                <br>• Text format: XML, JSON, CSV
+                <br>• Version Control: Git, GitHub.
+                <br>• Dependency control: Maven
+                <br>• SQL relational databases: MySQL, SQLite.
+                <br>• NoSQL relational databases: MongoDB.
+                <br>• Servers: Apache Tomcat, Apache TomEE, Glassfish
+                <br>• Testing: Unit and Integration Test, Junit, TDD.
+                <br>• Principles: Object-Oriented Programming, MVC, SOLID, Design Patterns, Clean Code, Agile
+                Development, SCRUM, Software Architecture.
+                <br>• Other: Team worker, fast learning, adaptability, highly motivated, Advanced IT English level,
+                communicative skills.
+            </p>
+        </div>
+            <div id="work-experience" class="container work-experience_container">
+                <h2 style="background: rgb(75,84,59)">Work Experience</h2>
+                <h3>Junior Software Engineer</h3>
+                <h3>The Singular Factory | January 2020 – May 2020</h3>
+                <p>
+                    I contributed to the development inside a team of a module of a company´s application for maintenance,
+                    inventory and tasks (Qiip). The team was composed by 3 Junior developers (included me), one Senior
+                    developer and the leader. This module was developed to adapt the application for concrete client, a town hall
+                    that wanted to administrate the cemetery with this software where I mainly developed the Frontend part (I
+                    also helped in certain moments in the Backend). We needed to add new features and options and delete
+                    others that were not necessary. The development was guided the CRUD principle in which all equipment,
+                    tasks, locations and inventory can be created, retrieved, updated and deleted.
+                </p>
+                <p>
+                    The project was developed using the following technologies:
+                    <br>• Frontend: Vue.js (Javascript) and company´s developed library for styles (similar to Bootstrap).
+                    <br>• Back-end: Symfony (php) and API Platform for database management.
+                    <br>• Others: PHPStorm IDE for Backend and WebStorm IDE for Frontend, Postman to check HTTP requests,
+                    JSON to manage different languages via one JSON file for each language and Git + GitBurns (developed
+                    by the company) for version control.
+                </p>
+                <h3>Intership - Junior Software Engineer</h3>
+                <h3>The Singular Factory | October 2019 - January 2020</h3>
+                <p>
+                    I developed an application to control the time and different measures of it, as Internet Time or UTC. I
+                    programmed the application to be available in Android with AngularJS and in IOS (iPhone and Apple Watch)
+                    with XCode IDE and Swift language.
+                </p>
+                <p>
+                    Besides, I researched a solution to integrate ArcGIS (an external application of the company for mapping),
+                    with an application of the company explained before (Qiip). They wanted to have an option for the clients that
+                    have also ArcGIS pro to show in a map where are located the elements selected in the application. I offered
+                    different possible solutions that I found:
+                    <br>• Using the API offered by ArcGIS to use the different functionalities.
+                    <br>• Redirect to ArcGIS web to show there the map of the location.
+                    <br>• Open the Desktop app for ArcGIS automatically to show there instead.
+                    <br>• Create a websocket using the port offered by the ArcGIS to obtain information about locations and
+                    maps.
+                </p>
+                <p>
+                    However, they did not continue with that idea of integration because none of the options where selected. The
+                    reasons are the next:
+                    <br>• The first option was the best to show the maps, but the clients could not take advantages of the
+                    account they pay for ArcGIS pro because they use an API instead.
+                    <br>• The second did not offer an option to send a location and show in a map after login. The client should
+                    login and manually go to the location. Besides there were no options to connect the elements offered
+                    by ArcGIS with the elements of Qiip.
+                    <br>• The third could work for the Desktop Qiip app, but not for the Web application.
+                    <br>• The fourth was the option that I proved that worked, but they did not continue because it take a lot of
+                    time to develop and would make to change the code already made. In conclusion, it was not profitable
+                    because there were interested a few clients that had also the ArcGIS pro, so they opted to cancel the
+                    idea.
+                </p>
+                <p>
+                    Finally, after this I joined the team to develop the module explained before during the rest of the practice
+                    contract and continuing during the temporal contract as a Junior developer.
+                </p>
+            </div>
+            <div id="education" class="container education_container">
+                <h2 style="background: rgb(75,84,59)">Education</h2>
+                <h3>Universidad de Las Palmas de Gran Canaria</h3>
+                <h3>Computer Science with Software Engineer Specialization | September 2016 – July 2020</h3>
+                <p>
+                    My main degree where I learned everything about the IT´s sector. During the four years of studies, I learned
+                    everything mainly with the Java language, so I know ample number of different technologies, frameworks and
+                    libraries of it and I have a lot experience and comfort programming in this language. During this degree I got
+                    these skills:
+                    <br>• Ability to robustly, securely and efficiently analyze, design, build and maintain applications
+                    <br>• Ability to design, develop, select and evaluate computer applications and systems, ensuring their
+                    reliability, security and quality
+                    <br>• Design, develop, implement, verify and document software solutions based on adequate knowledge of
+                    current theories, models and techniques.
+                </p>
+                <p>
+                    I also made the final project, “Finbook”, programmed mainly in Java where I got a 9.1/10 and mentioned for
+                    honors, that was explained before.
+                </p>
+                <hr>
+                <h3>Akademia Górniczo-Hutnicza - AGH - Erasmus</h3>
+                <h3>Computer Science with Software Engineer Specialization | September 2018 – June 2019</h3>
+                <p>
+                    I went one-year Erasmus to Krakow to study in the AGH continuing mainly with the specialization of Software
+                    Engineer. During this year I learned:
+                    <br>• Agile methodology, SCRUM and Project management.
+                    <br>• User interface designing
+                    <br>• Python, C++
+                    <br>• Web development (HTML5, CSS, JavaScript), frameworks (Express.js, Node.js) and MongoDB (NoSQL).
+                    <br>• Data analysis
+                    <br>• Computer Network
+                </p>
+            </div>
+            <div id="projects" class="container projects_container">
+                <h2 style="background: rgb(75,84,59)">Main Projects</h2>
+                <h3>Finbook - Invoice Simulator - Web Application | October 2019 - July 2020</h3>
+                <p>
+                    This project was the my final project and part of a Big data project developed by 4 Junior Java developers and
+                    a Senior developer that guided us. It is a Web application that simulate a virtual economic environment
+                    formed by companies that buy and sell products and service. These companies act in function of certain
+                    parameters and strategies to get the highest benefits and maintaining the rules and laws in the reality (e.g.
+                    Minimum salaries for the employers). All these Economy of Market works based of demands.
+                    During the execution the simulator will generate a high volume of invoices or bills that can be analyzed by
+                    other programs or processed by Big data applications, like in the case of this project. The rest of the modules
+                    of the main project use these invoices to generate reports about taxes automatically or to calculate the
+                    financial state of the companies. the bills will be saved in the xmlFiles folder located in "src/main/java/web/"
+                    folder.
+                    The Web application allows the user to change the settings to get a simulation adapted to their needs.
+                    Besides, it allows to check what is happening inside the simulation by the Event Box that shows all the events
+                    that happened during the execution and decide which Companies, Clients or Worker to track to show the
+                    events only of these ones. The user can download all the bills generated he wants from the Web client to read
+                    them or to process with other programs.
+                    This project was focused on the Backend (more than 250 classes) side to get the most reliability and realistic
+                    Virtual Economic Simulation and to be scalable using the base Architecture developed.
+                </p>
+                <h4>Install/Execute</h4>
+                <p>
+                    • The project has no Framework dependency, so it is necessary to have the server downloaded apart.
+                    <br>• The project uses the Tomcat Server, so the server downloaded must be Tomcat.
+                    <br>• Then, it is only need to clone and execute the project with the Tomcat server.
+                </p>
+                <h4>Built with</h4>
+                <h5>Backend</h5>
+                <p>
+                    • Java - Language
+                    <br>• Tomcat Server - Server for Backend
+                    <br>• SQLite Browse - SQL Relational DB Management System Application
+                    <br>• Maven - Dependency Management
+                </p>
+                <h5>Frontend</h5>
+                <p>
+                    • JSP, JavaScript and CSS - Languages for Web designing
+                    <br>• Jquery - Library to control the Web Requests and Data-Flow
+                </p>
+                <p>
+                    For more information, visit <a href="https://github.com/jaur001/SimulatorServer">Github Repository</a>
+                </p>
+                <hr>
+                <h3>Finbook - Invoice Simulator - Desktop App | October 2019 - February 2020</h3>
+                <p>
+                    This project is the desktop version of Simulator explained before. It is focused on the main objective, generate
+                    a high volume of invoices. There is no user interface and the important data is displayed in the console.
+                </p>
+                <h4>Install/Execute</h4>
+                <p>
+                    • It is only need to clone and execute the project execute the main class (Main.class) located in "src/main/java/main".
+                </p>
+
+                <h4>Built with</h4>
+                <p>
+                    • Java - Language
+                    <br>• SQLite Browse - SQL Relational DB Management System Aplication
+                    <br>• Maven - Dependency Management
+                </p>
+                <p>
+                    For more information, visit <a href="https://github.com/jaur001/Simulator">Github Repository</a>
+                </p>
+                <hr>
+                <h3>Key Finder App | October 2019 - January 2020</h3>
+                <p>
+                    This application is an IFTTT Desktop Application which checks daily the games that the users are interested,
+                    and if the price is lower than price selected by the use, then the user is notified by mail with the games and
+                    prices that has been lowered. The app was developed in Java and has these features:
+                    <br>• It allows to have different accounts with different games selected.
+                    <br>• The Graphic User Interface was developed using JavaFX.
+                    <br>• The prices are checked via Internet in https://www.allkeyshop.com/blog/ using JSoup library.
+                    <br>• The mails are sent using the Javax´s Mail library and SMTP protocol
+                    <br>• The project was tested using TDD technique with Unit and Integration testing.
+                </p>
+                <h4>Install/Execute</h4>
+                <p>
+                    • Clone and execute the Main.class located in “src/main/java/main” package.
+                </p>
+                <h4>Built with</h4>
+                <p>
+                    • Java - Language
+                    <br>• JavaFX – To develop the Graphic User Interface
+                    <br>• Maven – Dependency Management
+                    <br>• SMTP - Transfer Protocol to send mails.
+                </p>
+                <p>
+                    For more information, visit <a href="https://github.com/jaur001/Simulator" target="_blank">Github Repository</a>
+                </p>
+            </div>
+            <div  class="container small-projects_container">
+                <h2 style="background: rgb(75,84,59)">Small Projects</h2>
+                <h3>TDD Apps</h3>
+                <p>
+                    I have done different TDD projects to train this programming´s technique during the last year of my bachelor´s
+                    degree. All the projects are refactored by using functional programming. Examples are:
+                    <br>• <a href="https://github.com/jaur001/StringCalculatorTDD" target="_blank">String Calculator</a>
+                    <br>• <a href="https://github.com/jaur001/NumberBreakdown" target="_blank">Number Breakdown</a>
+                    <br>• <a href="https://github.com/jaur001/RomanNumerals" target="_blank">Roman Numerals</a>
+                </p>
+                <hr>
+                <h3>Image Viewer | December 2019</h3>
+                <p>
+                    This application allows to see images and change to previous or next one (It works
+                    similar as Windows´s Photos application). It was developed in Java. The photo resizes
+                    when you resizes the windows and adapts to the measures of it.
+                </p>
+
+                <h4>Install/Execute</h4>
+                <p>
+                    • Clone and execute
+                </p>
+                <h4>Built with</h4>
+                <p>
+                    • Java - Language
+                </p>
+                <p>
+                    For more information, visit <a href="https://github.com/jaur001/ImageViewer" target="_blank">Github Repository</a>
+                </p>
+                <hr>
+                <h3>Money Calculator | December 2019</h3>
+                <p>
+                    This application calculates the exchange rate from one currency to other one. The user writes an amount, the
+                    currency of the money and the currency to change as an input and receives the total amount of that output.
+                    The list of exchanges rates is obtained by a <a href="https://www.currencyconverterapi.com/" target="_blank">REST web service API</a>.
+                </p>
+                <h4>Install/Execute</h4>
+                <p>
+                    • Get your own key for the Currency API or use the one in the application
+                    <br>• Clone and execute
+                </p>
+                <h4>Built with</h4>
+                <p>
+                    • Java – Language
+                    <br>• REST Web Service
+                </p>
+                <p>
+                    For more information, visit <a href="https://github.com/jaur001/MoneyCalculator" target="_blank">Github Repository</a>
+                </p>
+                <hr>
+                <h3>University Moodle Platform | May 2019</h3>
+                <p>
+                    This project is Web application to support teachers and students with the marks of the
+                    different subjects. The users with the teacher role put marks in the subject they teach
+                    and the ones with Student role check the marks of every subject. All the data is saved
+                    in MongoDB database (NoSQL).
+                </p>
+                <h4>Install/Execute</h4>
+                <p>
+                    • Download Node.js to execute it.
+                    <br>• Clone the project and execute the app.js file with Node.js.
+                </p>
+                <h4>Built with</h4>
+                <h5>Backend</h5>
+                <p>
+                    • JavaScript - Language
+                    <br>• Node.js - Enviroment to program Backend with JavaScript
+                    <br>• Express.js - Framework to program in Node.js
+                    <br>• MongoDB - NoSQL Database Management System
+                </p>
+                <h5>Frontend</h5>
+                <p>
+                    • JavaScript
+                    <br>• HTML
+                    <br>• CSS
+                    <br>• PUG files
+                    <br>• EJS files
+                </p>
+                <p>
+                    For more information, visit <a href="https://github.com/jaur001/University-Moodle-Platform" target="_blank">Github Repository</a>
+                </p>
+                <h3>Math Expression Calculator – September 2020</h3>
+
+                <p>This application allows the user to calculate automatically complex Math expressions. The user just needs to
+                write the expression or click on the buttons and click in the "=" button to get the result. The calculator allows
+                the basic operations:
+                    <br>• 0-9 numbers
+                    <br>• Sum (+)
+                    <br>• Minus (-)
+                    <br>• Multiplication (x)
+                    <br>• Division (/)
+                    <br>• Decimal numbers adding (.)
+                    <br>It also allows complex ones like:
+                    <br>• Operations with parenthesis "()"
+                    <br>• Constants (e,π)
+                    <br>• Pow (^)
+                    <br>• Square root (√)
+                    <br>• Log-10 and Log-e(log,ln)
+                    <br>• Percentage (%)
+                    <br>• Factorial (!)
+                    <br>• Sin, cos and tan operation (sin,cos,tan)
+                </p>
+                <p>
+                This application can handle commons mistake that user can have writing a calculation, like forgetting a
+                number between, adding more than one time the operator (+-*/) or ending the calculation with a operator
+                with operating after. Besides, it abbreviates some calculation like operating a number with multiple operators
+                at once ("sin(log(10!))"), that can be reduced to ("sinlog10!"). In case of unhandled exception, the result will
+                be the error occurred and the result will be 0.0.
+                This application also provides a Restful web service to make the calculations. In order to make the request,
+                you need to go to the url /api/calculator/ writing the operation after the url as a path variable to make the
+                HTTP GET request. The response is a JSON object with the expression received and the result of the
+                expression. For example: { "text": "log100", "result": 2.0 }
+                </p>
+                <br>
+                <h4>Install/Execute</h4>
+                <p>This project was made with Spring boot so the server (Tomcat) is embedded, so it is only needed to clone and
+                execute the application, specifically, the main class that Spring boot provides (CalculatorApplcation.java)
+                located in src/main/java/com/urena/calculator.
+                </p>
+
+                <h4>Built with</h4>
+                <h5>Backend</h5>
+                <p>• Java - Language
+                    <br>• Spring and Spring boot - Framework for Java
+                    <br>• REST - Software Architecture to develop Web services
+                    <br>• JSON - Data format text</p>
+                <h5>Frontend</h5>
+                <p>• HTML5, JavaScript and CSS - Languages
+                    <br>• Thymeleaf - XML/HTML5 template
+                    <br>• Boostrap - CSS library</p>
+                <p>
+                    For more information, visit <a href="https://github.com/jaur001/MathExpressionCalculator" target="_blank">Github Repository</a>
+                </p>
+            </div>
+            <div id="achievements" class="container achievements_container">
+                <h2 style="background: rgb(75,84,59)">Achievements and Certifications</h2>
+                <p>
+                    <br>• Mentioned for honors in my Bachelor's Degree Final Project:
+                    “Finbook”.
+                    <br>• Spring & Hibernate for Beginners courser - Chad Darby - Udemy Course
+                    Course - 43 Hours
+                </p>
+                <br>
+                <div><img style="height: 50%; width: 50%; border-radius: 8%; padding: 0 30px"  src="https://udemy-certificate.s3.amazonaws.com/image/UC-1e1e1076-2ad9-47ea-b457-fd94194be07d.jpg" alt="Certificate"></div>
+                <p>
+                    <br>• Master Microservices with Spring Boot and Spring Cloud –
+                    In28Minutes - Udemy Course – 12 Hours
+                    <br>• Recommendation of Jose Juan Hernandez Cabrera - Senior Developer
+                    and Leader in different Companies and teacher during my degree and tutor during my final project - more than 30 years of experience
+                    <br><a href="https://drive.google.com/file/d/15yZzixt0zFlTdZguduoB4eLLvZv3L26H/view?usp=sharing" target="_blank">Recommendation</a>
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

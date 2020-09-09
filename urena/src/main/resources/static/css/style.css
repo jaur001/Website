@@ -1,0 +1,163 @@
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(220,226,170);
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+    line-height: 1.6;
+    display:  block;
+    margin: 10px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 35px;
+    color: white;
+    padding: 10px 30px;
+}
+
+.main_container h3:first-child{
+    padding: 0;
+    border-bottom: 2px solid rgb(75,89,54);
+}
+
+.main_container h3:nth-child(2){
+    padding: 0;
+    border-bottom: 2px solid rgb(75,89,54);
+}
+
+.main_container h3:nth-child(3){
+    padding: 0;
+    border-bottom: 2px solid rgb(75,89,54);
+}
+
+.main_container h3:nth-child(4){
+    padding: 0;
+    border-bottom: 2px solid rgb(75,89,54);
+}
+
+h3{
+    font-size: 28px;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+h4{
+    font-size: 25px;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+h5{
+    font-size: 22px;
+    padding: 0 30px;
+    margin: 0;
+}
+
+p{
+    padding: 0 30px;
+    font-size: 18px;
+    margin: 0;
+}
+
+br{
+    padding: 0 30px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto 2vw auto;
+    padding: 10px 30px;
+}
+
+.main_container{
+    background: rgb(181,127,80);
+}
+
+.main_content {
+    float: left;
+    margin: 0 0 0 auto;
+    color: white;
+    text-shadow: -1px 0 darkgray, 0 1px darkgray, 1px 0 darkgray, 0 -1px darkgray;
+}
+
+.main_content h1{
+    font-size: 43px;
+    margin: 0 0 10px 0;
+}
+
+.main_content a{
+    font-size: 40px;
+    color: white;
+    padding-right: 20px;
+}
+
+.main_content a:hover{
+    color: lightgray;
+}
+
+.flex_container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav{
+    margin: 0 auto;
+}
+
+.nav_list{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+
+    padding-top: 10px;
+    margin: auto;
+}
+
+.nav_list a:hover{
+    color: lightgray;
+}
+
+.about_container{
+    margin-top: 0;
+}
+
+.about_container p{
+    font-size: 20px;
+    text-shadow: rgb(164,127,80) 0 0 10px;
+    text-align: justify;
+}
+hr{
+    border: 2px solid rgb(75,89,54);
+}
+
+.achievements_container a{
+    font-size: 30px;
+    color: rgb(181,127,80);
+    font-width: 400;
+    text-decoration: underline;
+}
+
+.achievements_container a:hover{
+    color: rgb(100,127,80);
+}
+
