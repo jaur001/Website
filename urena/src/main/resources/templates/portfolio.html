@@ -2,17 +2,17 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Portfolio</title>
     <link rel="stylesheet" th:href="@{/css/style.css}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
 </head>
 <body>
     <div>
         <div class="main_container">
-            <div class="nav container">
-                <nav>
+            <div class="container">
+                <nav class="nav-horizontal">
                     <ul class="nav_list" style="list-style-type: none;">
                         <li><a class="nav_item" href="#about">About</a></li>
                         <li><a class="nav_item" href="#skills">Skills</a></li>
@@ -20,9 +20,19 @@
                         <li><a class="nav_item" href="#education">Education</a></li>
                         <li><a class="nav_item" href="#projects">Projects</a></li>
                         <li><a class="nav_item" href="#achievements">Achievements</a></li>
-
                     </ul>
                 </nav>
+            <div class="select">
+                    <select onchange="if (this.value) window.location.href = this.value;">
+                        <option value="#about">About</option>
+                        <option value="#skills">Skills</option>
+                        <option value="#work-experience">Work experience</option>
+                        <option value="#education">Education</option>
+                        <option value="#projects">Projects</option>
+                        <option value="#achievements">Achievements</option>
+                    </select>
+            </div>
+
             </div>
             <hr style="max-width: 1200px;border: 1px solid rgb(75,84,59)">
             <div class="flex_container">
@@ -174,6 +184,42 @@
             </div>
             <div id="projects" class="container projects_container">
                 <h2 style="background: rgb(75,84,59)">Main Projects</h2>
+                <h3>Post-It - Social Network - September 2020 - Now</h3>
+                <p>
+                    Post-It is an Social Network that allow the users to post text to share with the followers that can like, dislike or comment the posts. The users
+                    to register or login to the application to share their life with the followers.There is a CRUD for users and posts from the users using Rest web
+                    services. It also allow the users to follow other ones or delete this followers. Finally, you can check all the data about the users created, the
+                    posts they have shared and the followers and followings.
+                </p>
+                <p>
+                    The data is saved in a MySQL database and sensitive data like the password is filtered so it will not be showed in the response, showing instead
+                    other interesting information to access next using HATEOAS. Besides, the service provides documentation about this web service and all the
+                    information about the entire list of resources available and how to interact with them using the different HTTP methods offered in the
+                    documentation. The documentation also offers details about the version and description of this Restful Web Service.
+                </p>
+                <h4>Install/Execute</h4>
+                <p>
+                    It is needed to clone, create your own database and update it in the application.properties and execute the Main Class of the project located in
+                    com.urena.postit.postit package. The server (Tomcat) is already embedded in the Spring Boot framework. Futhermore, in the v2/api-docs you have all
+                    documentation about the web service and in the /actuator more information as the health or the beans used. To create the database, there is already a
+                    SQL Script file that allows you to create it automatically.
+                </p>
+                <h4>Built with</h4>
+                <p>
+                    • Java - Programming language
+                    <br>• Spring boot - Framework for Java
+                    <br>• Swagger2 - Rest Service Documentation
+                    <br>• MySQL - SQL Database Management
+                    <br>• Hibernate - JPA implementation to access to the data in the database.
+                    <br>• HATEOAS - library to expose more resources that can be useful for the user.
+                    <br>• HAL browser - library to obtain information about the different URLs provided by the Rest Service.
+                </p>
+                <br><br>
+                <p>
+                    For more information, visit <a href="https://github.com/jaur001/Post-It-RestfulWebService">Github Repository</a>
+                </p>
+                <br><br><br>
+                <hr>
                 <h3>Finbook - Invoice Simulator - Web Application | October 2019 - July 2020</h3>
                 <p>
                     This project was the my final project and part of a Big data project developed by 4 Junior Java developers and
@@ -213,9 +259,11 @@
                     • JSP, JavaScript and CSS - Languages for Web designing
                     <br>• Jquery - Library to control the Web Requests and Data-Flow
                 </p>
+                <br><br>
                 <p>
                     For more information, visit <a href="https://github.com/jaur001/SimulatorServer">Github Repository</a>
                 </p>
+                <br><br><br>
                 <hr>
                 <h3>Finbook - Invoice Simulator - Desktop App | October 2019 - February 2020</h3>
                 <p>
@@ -233,9 +281,11 @@
                     <br>• SQLite Browse - SQL Relational DB Management System Aplication
                     <br>• Maven - Dependency Management
                 </p>
+                <br><br>
                 <p>
                     For more information, visit <a href="https://github.com/jaur001/Simulator">Github Repository</a>
                 </p>
+                <br><br><br>
                 <hr>
                 <h3>Key Finder App | October 2019 - January 2020</h3>
                 <p>
@@ -259,9 +309,11 @@
                     <br>• Maven – Dependency Management
                     <br>• SMTP - Transfer Protocol to send mails.
                 </p>
+                <br><br>
                 <p>
                     For more information, visit <a href="https://github.com/jaur001/Simulator" target="_blank">Github Repository</a>
                 </p>
+                <br><br><br>
             </div>
             <div  class="container small-projects_container">
                 <h2 style="background: rgb(75,84,59)">Small Projects</h2>
@@ -289,9 +341,11 @@
                 <p>
                     • Java - Language
                 </p>
+                <br><br>
                 <p>
                     For more information, visit <a href="https://github.com/jaur001/ImageViewer" target="_blank">Github Repository</a>
                 </p>
+                <br><br><br>
                 <hr>
                 <h3>Money Calculator | December 2019</h3>
                 <p>
@@ -309,9 +363,11 @@
                     • Java – Language
                     <br>• REST Web Service
                 </p>
+                <br><br>
                 <p>
                     For more information, visit <a href="https://github.com/jaur001/MoneyCalculator" target="_blank">Github Repository</a>
                 </p>
+                <br><br><br>
                 <hr>
                 <h3>University Moodle Platform | May 2019</h3>
                 <p>
@@ -341,9 +397,12 @@
                     <br>• PUG files
                     <br>• EJS files
                 </p>
+                <br><br>
                 <p>
                     For more information, visit <a href="https://github.com/jaur001/University-Moodle-Platform" target="_blank">Github Repository</a>
                 </p>
+                <br><br><br>
+                <hr>
                 <h3>Math Expression Calculator – September 2020</h3>
 
                 <p>This application allows the user to calculate automatically complex Math expressions. The user just needs to
@@ -393,9 +452,11 @@
                 <p>• HTML5, JavaScript and CSS - Languages
                     <br>• Thymeleaf - XML/HTML5 template
                     <br>• Boostrap - CSS library</p>
+                <br><br>
                 <p>
                     For more information, visit <a href="https://github.com/jaur001/MathExpressionCalculator" target="_blank">Github Repository</a>
                 </p>
+                <br><br><br>
             </div>
             <div id="achievements" class="container achievements_container">
                 <h2 style="background: rgb(75,84,59)">Achievements and Certifications</h2>
